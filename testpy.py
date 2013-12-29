@@ -27,3 +27,5 @@ class myclass:
         mwindow.clear()
         mwindow.draw(mplayer)
         mwindow.display()
+
+# this is a test of the VCS
