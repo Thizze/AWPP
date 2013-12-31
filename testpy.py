@@ -20,6 +20,16 @@ class myclass:
             if type(event) is sf.CloseEvent:
                 mwindow.close()
 
+            # player movement
+            if sf.Keyboard.is_key_pressed(sf.Keyboard.W):
+                mplayer.position += (0,-5)
+            elif sf.Keyboard.is_key_pressed(sf.Keyboard.A):
+                mplayer.position -= (5,0)
+            elif sf.Keyboard.is_key_pressed(sf.Keyboard.S):
+                mplayer.position -= (0,-5)
+            elif sf.Keyboard.is_key_pressed(sf.Keyboard.D):
+                mplayer.position += (5,0)
+
     def update(self):
         pass
 
